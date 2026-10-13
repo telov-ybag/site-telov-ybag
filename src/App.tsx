@@ -397,7 +397,7 @@ export default function App() {
             <i />
             Looking for an intership
           </span>
-          <a className="contact-link" href="gabriel.volet1@etu.univ-lorraine.fr">
+          <a className="contact-link" href="mailto:gabriel.volet1@etu.univ-lorraine.fr">
             Contact me <span>↗</span>
           </a>
         </div>
