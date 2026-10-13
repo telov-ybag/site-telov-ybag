@@ -91,7 +91,7 @@ const projects = [
     detail: "Study of interaction modalities and visit experience in a museum environment using augmented reality.",
     color: "from-[#705148] to-[#211b1c]",
     glyph: "LOGO",
-    course:"M1 Mentored Projet/ LORIA (MBAN V2)",
+    course:"M1 Mentored Project/ LORIA (MBAN V2)",
     skills:["VR dev., Literature research","Questionnaire design","Protocol creation", "Protocol administration", "Analysis of results"]
   },
   {
@@ -295,7 +295,7 @@ function InventoryContent() {
         <div>
           <p className="eyebrow">Collected items </p>
           <h2 className="display-title">
-            Projets <em>sélectionnés.</em>
+            Exemples of projects made by the player Gabriel
           </h2>
         </div>
         <p className="inventory-count">{projects.length} Items</p>
@@ -386,7 +386,7 @@ export default function App() {
       <div className="atmosphere" aria-hidden="true" />
       <header className="topbar">
         <a href="#" className="brand" aria-label="Retour à l’accueil">
-          <span className="brand-sigil">G</span>
+          <span className="brand-sigil"><img src="Images/GFLogo.png" alt="Logo" /></span>
           <span>
             Gabriel
             <small>Experiences Designer</small>
