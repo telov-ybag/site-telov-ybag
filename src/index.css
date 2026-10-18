@@ -112,10 +112,10 @@ a:focus-visible {
   height: 42px;
   place-items: center;
   color: #b18a58;
-  border: 1px solid rgba(177, 138, 88, 0.6);
+  
   font-size: 23px;
   font-weight: 500;
-  transform: rotate(45deg);
+  
 }
 
 .brand-sigil::first-letter {

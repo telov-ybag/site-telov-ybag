@@ -67,10 +67,12 @@ const projects = [
     title: "Tool for designing board game construction plans",
     type: "Mobile Application",
     detail: "Application allowing users to obtain a construction plan and a list of required pieces from images.",
-    color: "from-[#8a6841] to-[#24251f]",
+    color: "from-[#56566b] to-[#19191f]",
     glyph: "LOGO",
     course:"M2: Multidisciplinary Project",
-    skills: ["Trello","Jira","SCRUM","Flutter","Card Sorting","User needs"]
+    skills: ["Trello","Jira","SCRUM","Flutter","Card Sorting","User needs"],
+    logo: <img src={"./Images/LogoLego.png"} alt="Logo" />,
+    domain: "Application",
   },
   {
     id: "02",
@@ -78,10 +80,12 @@ const projects = [
     title: "Strategy Game Dev.",
     type: "Video Game Project",
     detail: "Turn-based strategy video game. Genres: deck builder, city builder.",
-    color: "from-[#4d5a43] to-[#171c19]",
+    color: "from-[#705148] to-[#211b1c]",
     glyph: "LOGO",
     course:"Personal project",
-    skills: ["Unity", "Blender","C#"]
+    skills: ["Unity", "Blender","C#"],
+    logo: <img src={"./Images/LogoJeuStrat.png"} alt="Logo" />,
+    domain: "Multimedia",
   },
   {
     id: "03",
@@ -89,10 +93,12 @@ const projects = [
     title: "Museum environment usability study",
     type: "Scientific study",
     detail: "Study of interaction modalities and visit experience in a museum environment using augmented reality.",
-    color: "from-[#705148] to-[#211b1c]",
+    color: "from-[#4d5a43] to-[#171c19]",
     glyph: "LOGO",
     course:"M1 Mentored Project/ LORIA (MBAN V2)",
-    skills:["VR dev., Literature research","Questionnaire design","Protocol creation", "Protocol administration", "Analysis of results"]
+    skills:["VR dev., Literature research","Questionnaire design","Protocol creation", "Protocol administration", "Analysis of results"],
+    logo: <img src={"./Images/LogoProjetMusée.png"} alt="Logo" />,
+    domain: "Scientific analysis",
   },
   {
     id: "04",
@@ -100,10 +106,12 @@ const projects = [
     title: "Cavale dans Nancy",
     type: "Boardgame dev.",
     detail: "Two-player strategy game (thief vs police).",
-    color: "from-[#56566b] to-[#19191f]",
+    color: "from-[#705148] to-[#211b1c]",
     glyph: "LOGO",
     course:"M1 Project: Game Design",
-    skills:["Narative design", "Drafting of rules", "Gameplay balancing"]
+    skills:["Narative design", "Drafting of rules", "Gameplay balancing"],
+    logo: <img src={"./Images/LogoJeuVoleur.png"} alt="Logo" />,
+    domain:"Multimedia",
   },
 
   {
@@ -112,10 +120,12 @@ const projects = [
     title: "Overload",
     type: "Serious Game",
     detail: "Prototyping a serious game to raise awareness among relatives of autistic people about best practice",
-    color: "from-[#56566b] to-[#19191f]",
+    color: "from-[#705148] to-[#211b1c]",
     glyph: "LOGO",
     course:"M1 Project: Interaction Conception",
     skills:["Personae","User stories","Figma","Game design"],
+    logo: <img src={"./Images/LogoOverload.png"} alt="Logo" />,
+    domain: "Multimedia",
   },
 
   {
@@ -124,10 +134,12 @@ const projects = [
     title: "Les vieux sont encore dans le coup! ",
     type: "Scientific video",
     detail: "Presentation of psychomotor results in video format.",
-    color: "from-[#56566b] to-[#19191f]",
+    color: "from-[#4d5a43] to-[#171c19]",
     glyph: "LOGO",
     course:"M1: Multidisciplinary Project",
     skills:["Python(Pandas)", "Analysis of cientific articles","Data viz."],
+    logo: <img src={"./Images/LogoVideoProjetPluri.png"} alt="Logo" />,
+    domain: "Scientific analysis",
   },
 
   {
@@ -136,10 +148,12 @@ const projects = [
     title: "Gris ou comment dire sans parler",
     type: "Video",
     detail: "Video analysing the visual communication of the game Gris.",
-    color: "from-[#56566b] to-[#19191f]",
+    color: "from-[#705148] to-[#211b1c]",
     glyph: "LOGO",
     course:"M1: Communication project",
     skills:["Communication","Storytelling", "video editing"],
+    logo: <img src={"./Images/LogoVidGris.png"} alt="Logo" />,
+    domain: "Scientific analysis",
 
   },
   {
@@ -151,7 +165,9 @@ const projects = [
     color: "from-[#56566b] to-[#19191f]",
     glyph: "LOGO",
     course:"L3: Multidisciplinary project",
-    skills:["HTML","CSS","PHP","phpMyAdmin", "Git/Github", "User testing"]
+    skills:["HTML","CSS","PHP","phpMyAdmin", "Git/Github", "User testing"],
+    logo: <img src={"./Images/LogoRevEase.png"} alt="Logo" />,
+    domain: "Application",
   },
 ];
 
@@ -206,7 +222,7 @@ function ProfileContent() {
         <Skill name="Data Scientist" value={70}/>
         <div className="quote">
           <span>“</span>
-          Looking for something to put in there.
+          The cake is a lie.
         </div>
       </aside>
     </div>
@@ -253,7 +269,7 @@ function QuestContent() {
       <div className="mb-10 max-w-2xl">
         <p className="eyebrow">Quest Log</p>
         <h2 className="display-title">
-          All the active and completed quest.
+          All the active and completed quests.
         </h2>
         <p className="body-copy mt-5">
           No quests are currently active. The player is searching for one.
@@ -315,7 +331,7 @@ function InventoryContent() {
                 aria-controls="project-description"
               >
                 <span className={`project-thumbnail bg-gradient-to-br ${project.color}`}>
-                  <span className="project-glyph">{project.glyph}</span>
+                  <span className="project-logo">{project.logo}</span>
                   <span className="project-ring" />
                 </span>
                 <span className="project-meta">
@@ -338,10 +354,10 @@ function InventoryContent() {
           aria-live="polite"
         >
           <div className={`project-hero bg-gradient-to-br ${selectedProject.color}`}>
-            <span className="project-hero-index">{selectedProject.id} / 04</span>
-            <span className="project-hero-glyph">{selectedProject.glyph}</span>
+            <span className="project-hero-index">{selectedProject.id} / 08</span>
+            <span className="project-hero-logo">{selectedProject.logo}</span>
             <div className="project-ring project-hero-ring" />
-            <span className="project-hero-caption">Archive du projet</span>
+            <span className="project-hero-caption">{selectedProject.domain}</span>
           </div>
 
           <div className="project-description-body">
@@ -386,7 +402,7 @@ export default function App() {
       <div className="atmosphere" aria-hidden="true" />
       <header className="topbar">
         <a href="#" className="brand" aria-label="Retour à l’accueil">
-          <span className="brand-sigil"><img src="./Images/GFLogo.png" alt="Logo" /></span>
+          <span className="brand-sigil"><img src={"./Images/GFLogo.png"} alt="Logo" /></span>
           <span>
             Gabriel
             <small>Experiences Designer</small>
