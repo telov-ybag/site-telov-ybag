@@ -1,4 +1,6 @@
 import { useState, type ReactNode } from "react";
+import GFlogo from './../Images/GFLogo.png';
+
 
 type TabId = "profile" | "quests" | "inventory";
 
@@ -402,7 +404,7 @@ export default function App() {
       <div className="atmosphere" aria-hidden="true" />
       <header className="topbar">
         <a href="#" className="brand" aria-label="Retour à l’accueil">
-          <span className="brand-sigil"><img src={"/tree/main/Images/GFLogo.png"} alt="Logo" /></span>
+          <span className="brand-sigil"><img src={GFlogo} alt="Logo" /></span>
           <span>
             Gabriel
             <small>Experiences Designer</small>
