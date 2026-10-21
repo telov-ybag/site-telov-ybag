@@ -402,7 +402,7 @@ export default function App() {
       <div className="atmosphere" aria-hidden="true" />
       <header className="topbar">
         <a href="#" className="brand" aria-label="Retour à l’accueil">
-          <span className="brand-sigil"><img src={"/site-telov-ybag/tree/main/Images/GFLogo.png"} alt="Logo" /></span>
+          <span className="brand-sigil"><img src={"/tree/main/Images/GFLogo.png"} alt="Logo" /></span>
           <span>
             Gabriel
             <small>Experiences Designer</small>
