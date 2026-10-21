@@ -1,5 +1,13 @@
 import { useState, type ReactNode } from "react";
 import GFlogo from './../Images/GFLogo.png';
+import LogoJeuStrat from './../Images/LogoJeuStrat.png';
+import LogoJeuVoleur from './../Images/LogoJeuVoleur.png';
+import LogoLego from './../Images/LogoLego.png';
+import LogoOverload from './../Images/LogoOverload.png';
+import LogoProjetMusée from './../Images/LogoProjetMusée.png';
+import LogoRevEase from './../Images/LogoRevEase.png';
+import LogoVideoProjetPluri from './../Images/LogoVideoProjetPluri.png';
+import LogoVidGris from './../Images/LogoVidGris.png';
 
 
 type TabId = "profile" | "quests" | "inventory";
@@ -73,7 +81,7 @@ const projects = [
     glyph: "LOGO",
     course:"M2: Multidisciplinary Project",
     skills: ["Trello","Jira","SCRUM","Flutter","Card Sorting","User needs"],
-    logo: <img src={"./Images/LogoLego.png"} alt="Logo" />,
+    logo: <img src={LogoLego} alt="Logo" />,
     domain: "Application",
   },
   {
@@ -86,7 +94,7 @@ const projects = [
     glyph: "LOGO",
     course:"Personal project",
     skills: ["Unity", "Blender","C#"],
-    logo: <img src={"./Images/LogoJeuStrat.png"} alt="Logo" />,
+    logo: <img src={"./../Images/LogoJeuStrat.png"} alt="Logo" />,
     domain: "Multimedia",
   },
   {
