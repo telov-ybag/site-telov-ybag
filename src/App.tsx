@@ -94,7 +94,7 @@ const projects = [
     glyph: "LOGO",
     course:"Personal project",
     skills: ["Unity", "Blender","C#"],
-    logo: <img src={"./../Images/LogoJeuStrat.png"} alt="Logo" />,
+    logo: <img src={LogoJeuStrat} alt="Logo" />,
     domain: "Multimedia",
   },
   {
@@ -107,7 +107,7 @@ const projects = [
     glyph: "LOGO",
     course:"M1 Mentored Project/ LORIA (MBAN V2)",
     skills:["VR dev., Literature research","Questionnaire design","Protocol creation", "Protocol administration", "Analysis of results"],
-    logo: <img src={"./Images/LogoProjetMusée.png"} alt="Logo" />,
+    logo: <img src={LogoProjetMusée} alt="Logo" />,
     domain: "Scientific analysis",
   },
   {
@@ -120,7 +120,7 @@ const projects = [
     glyph: "LOGO",
     course:"M1 Project: Game Design",
     skills:["Narative design", "Drafting of rules", "Gameplay balancing"],
-    logo: <img src={"./Images/LogoJeuVoleur.png"} alt="Logo" />,
+    logo: <img src={LogoJeuVoleur} alt="Logo" />,
     domain:"Multimedia",
   },
 
@@ -134,7 +134,7 @@ const projects = [
     glyph: "LOGO",
     course:"M1 Project: Interaction Conception",
     skills:["Personae","User stories","Figma","Game design"],
-    logo: <img src={"./Images/LogoOverload.png"} alt="Logo" />,
+    logo: <img src={LogoOverload} alt="Logo" />,
     domain: "Multimedia",
   },
 
@@ -148,7 +148,7 @@ const projects = [
     glyph: "LOGO",
     course:"M1: Multidisciplinary Project",
     skills:["Python(Pandas)", "Analysis of cientific articles","Data viz."],
-    logo: <img src={"./Images/LogoVideoProjetPluri.png"} alt="Logo" />,
+    logo: <img src={LogoVideoProjetPluri} alt="Logo" />,
     domain: "Scientific analysis",
   },
 
@@ -162,7 +162,7 @@ const projects = [
     glyph: "LOGO",
     course:"M1: Communication project",
     skills:["Communication","Storytelling", "video editing"],
-    logo: <img src={"./Images/LogoVidGris.png"} alt="Logo" />,
+    logo: <img src={LogoVidGris} alt="Logo" />,
     domain: "Scientific analysis",
 
   },
@@ -176,7 +176,7 @@ const projects = [
     glyph: "LOGO",
     course:"L3: Multidisciplinary project",
     skills:["HTML","CSS","PHP","phpMyAdmin", "Git/Github", "User testing"],
-    logo: <img src={"./Images/LogoRevEase.png"} alt="Logo" />,
+    logo: <img src={LogoRevEase} alt="Logo" />,
     domain: "Application",
   },
 ];
